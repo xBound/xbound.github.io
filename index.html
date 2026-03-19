@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xBound</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="https://xbound.github.io" target="_blank" rel="noopener noreferrer" class="brand-link">
+        <img src="assets/icons/xbound-icon.png" alt="XBound icon" class="brand-icon">
+        <span>xBound</span>
+      </a>
+    </div>
+
+    <ul class="nav-center">
+      <li><a href="https://xbound.github.io" target="_blank" rel="noopener noreferrer">Home</a></li>
+      <li><a href="https://xbound.github.io/xbound-demo" target="_blank" rel="noopener noreferrer">Demo</a></li>
+      <li><a href="https://github.com/utndatasystems/virtual" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <span class="brought-by">Brought to you by</span>
+      <div class="partner-logos">
+        <img src="assets/icons/gsl-logo.jpeg" alt="GSL logo" class="partner-logo gsl-logo">
+        <img src="assets/icons/uds-logo.svg" alt="Data Systems Lab logo" class="partner-logo">
+      </div>
+    </div>
+  </nav>
+
+  <main class="slides" aria-live="polite">
+    <section class="slide is-active" id="slide-1" aria-label="Production slide">
+      <div class="slide-inner">
+        <h1>Does your system also severily underestimate?</h1>
+        <img src="assets/images/production-cpu-count.png" alt="Production CPU count" class="slide-image">
+      </div>
+    </section>
+
+    <section class="slide" id="slide-2" aria-label="XBound slide">
+      <div class="slide-inner">
+        <h1>Fix understimation by clipping your estimates with lower bounds</h1>
+        <img src="assets/images/xbounded-systems.png" alt="XBounded systems chart" class="slide-image">
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const firstSlide = document.getElementById('slide-1');
+    const secondSlide = document.getElementById('slide-2');
+
+    setTimeout(() => {
+      firstSlide.classList.remove('is-active');
+      secondSlide.classList.add('is-active');
+    }, 5000);
+  </script>
+</body>
+</html>
